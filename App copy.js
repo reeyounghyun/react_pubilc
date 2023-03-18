@@ -44,8 +44,10 @@ function App() {
 export default App;
 
 /*
-useRef
-아직 realDOM으로 변경되지 않은 viryalDOM을 미리 객체에 담아서 참조
+useRef를 쓰는 사례
+1-아직 realDOM으로 변경되지 않은 viryalDOM을 미리 객체에 담아서 참조
+2- 특정 값을 컴포넌트에 저장을 할때  두가지 방법이 존재, (방법1)state에 저장,방법2) 일반 변수에 저장)
+state저장시 (값이 변경된상태로 다음 렌더링 사이클에서도 값이 유지가됨 - 해당값이 변경되면 해당 컴포넌트가 재호출되면서 재랜더링됨)
 
 const 변수 - useRef(초기값);
 - 변수에는 useRef의 초기값을 활용해서 빈 참조객체가 생성됨
