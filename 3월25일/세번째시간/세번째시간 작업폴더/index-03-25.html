@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+</body>
+
+</html>
+
+<!-- 
+  SSR VS CSR
+
+  SSR - Server Side Rendering 
+  - 페이지 이동시마다 일일이 서버쪽에 출력될 HTML파일을 요청
+  장점 : 초기 로딩소독는 빠른편, 검색엔진에 최적화 (SEO : Search Engine Optimization)
+  단점 : 페이지 이동시, 같은페이지 안에서 컨텐츠가 동적으로 바뀌어야 할때는 사용성이 낮아짐
+  
+  CSR - Client Side Rendering
+  - 초기에 화면에 출력될 모든 정보 데이터를 Chunk단위의 자바스크립트 파일로 모두 불러옴
+  
+  장점 : 같은 페잊 안에서 서로 다른 컨첸츠를 실시간으로 변경하면서 출혁하므로 동적 컨텐츠 변경이 자유로움
+  단점 : 한번에 모든 데이터를 모두 불러와야 되기 때문에 초기 로딩속도가 SSR방식에 비해 느림, 검색엔진 비 최적화
+
+// -->
