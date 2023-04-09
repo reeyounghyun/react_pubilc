@@ -1,0 +1,48 @@
+.Location {
+	>.inner {
+		#map {
+			width: 100%;
+			height: 50vh;
+			background: #000;
+			position: relative;
+		}
+
+		nav {
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			margin-top: 30px;
+
+			burron {
+				border: none;
+				background-color: #333;
+				color: #fff;
+				width: 200pc;
+				height: 40px;
+				cursor: pointer;
+			}
+
+			ul{
+				display: flex;
+				gap: 10px;
+
+				li{
+					width: 150xp;
+					height: 36px;
+					background: #555;
+					color: #ddd;
+					text-align: center;
+					font: 14px/36 '맑은 고딕';
+					cursor: pointer;
+				}
+				
+				&.on{
+					background-color: #000;
+					color: orange;
+				}
+			}
+		}
+	}
+}
